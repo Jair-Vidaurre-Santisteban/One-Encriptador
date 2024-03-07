@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <main class="container">
+        <div class="container_izquierda">
+            <div class="container_logo">
+                <img src="img/Logo.png" alt="logo alura" class="imgLogo">
+            </div>
+            
+            <div class="container_textoIngresado">
+                <textarea class="textoIngresado"  oninput='soloMinusculas();' name="" spellcheck="false" placeholder="Ingrese el texto aqui" id="textoIngresado" ></textarea>
+                <p class="margin-top"><img src="img/exclamacion-circulo.png" alt=""> Solo letras minusculas y sin acentos</p>
+                <div class="container_botones">
+                    <button onclick="encriptar();" class="btn-encriptar">Encriptar</button>
+                    <button onclick="desencriptar();" class="btn-desencriptar">Desencriptar</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container_derecha">
+
+            <div id="container_mostrarImg" class="container_textoMostradoImg">
+                <div class="container_imgTextoMostrado">
+                    <img src="img/Muñeco.png" class="img_textoMostrado" alt="muñeco">
+                    <div>
+                        <h2 class="centrarTexto">Ningún mensaje fue encontrado</h2>
+                        <p class="centrarTexto">Ingrese el texto que desea Encriptar o Desencriptar</p>
+
+                    </div>
+                </div>
+            </div>
+            <div  style="display:none;" id="container_mostrarTexto"  class="container_textoMostrado" >
+                <textarea class="textoMostrado" readonly name="" id="textoMostrado"></textarea>
+                <button class="btn-copiar" onclick="copiar();">Copiar</button>
+            </div>
+
+            
+           
+        </div>
+
+    </main>
+
+    
+    <footer>
+        <h6>
+
+            @VidaurreSantistebanJairOriel
+
+        </h6>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
